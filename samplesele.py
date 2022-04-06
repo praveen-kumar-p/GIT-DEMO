@@ -293,6 +293,7 @@
 # sleep(2)
 # driver.find_element_by_xpath("//a[@class='nav-a']  ").click()
 # sleep(2)
+import webbrowser
 
 from selenium.webdriver import Chrome
 from time import sleep
@@ -671,9 +672,10 @@ from time import sleep
 # from selenium.webdriver.common.action_chains import ActionChains
 # driver = Chrome('./chromedriver')
 # driver.get('https://www.monsterindia.com/')
+# driver.find_element_by_id("wzrk-cancel").click()
 # actions = ActionChains(driver)
-# actions.send_keys(Keys.PAGE_DOWN)
-#
+# actions.send_keys(Keys.PAGE_DOWN).perform()
+# actions.send_keys(Keys.PAGE_UP).perform()
 # driver.find_element_by_xpath("//span[@title='Python']").click()
 
 # from selenium.webdriver import Chrome
@@ -712,4 +714,197 @@ from time import sleep
 # action.move_to_element(p).perform()
 # o = driver.find_element_by_xpath("(//a[contains(text(), 'Jobs in Chennai')])[1]")
 # action.move_to_element(o).perfrom()
+
+# from selenium.webdriver import Chrome
+# from time import sleep
+# from selenium.webdriver.common.action_chains import ActionChains
+# driver = Chrome('./chromedriver')
+# driver.get('https://www.reliancedigital.in/')
+# sleep(2)
+# driver.find_element_by_xpath("(//li[@class='nav__container'])[3]")
+# action = ActionChains(driver)
+# ele =driver.find_element_by_xpath("(//li[@class='nav__container'])[3]")
+# action.move_to_element(ele).perform()
+# sleep(4)
+# driver.find_element_by_xpath("//a[text()='Double Door']").click()
+#
+#
+#
+# from selenium.webdriver import Chrome
+# from time import sleep
+# from selenium.webdriver.common.action_chains import ActionChains
+# driver = Chrome('chromedriver')
+# driver.get('https://www.myntra.com/')
+# driver.find_element_by_link_text("Men")
+# action = ActionChains(driver)
+# ele = driver.find_element_by_link_text("Formal Shirts")
+# action.move_to_element(ele).perform()
+#
+#
+# from selenium.webdriver import Chrome
+# from selenium.webdriver.common.action_chains import ActionChains
+# driver = Chrome('./chromedriver')
+# driver.get('')
+# a = driver.find_element_by_id("draggable")
+# b = driver.find_element_by_id("droppable")
+# action = ActionChains(driver)
+# action.drag_and_drop(a, b).perform()
+
+
+# from selenium.webdriver import Chrome
+# from time import sleep
+# from selenium.webdriver.common.action_chains import ActionChains
+# driver = Chrome('./chromedriver')
+# driver.get('https://crossbrowsertesting.github.io/drag-and-drop.html')
+# a = driver.find_element_by_id('draggable')
+# b = driver.find_element_by_id('droppable')
+# action = ActionChains(driver)
+# sleep(3)
+# action.drag_and_drop(a, b).perform()
+
+# from selenium.webdriver import Chrome
+# from time import sleep
+# driver = Chrome('./chromedriver')
+# driver.get('https://www.makemytrip.com/')
+# driver.find_element_by_id('fromCity').send_keys('banglore')
+# driver.find_element_by_id('fromCity').send_keys('kolkata')
+
+#
+# from selenium.webdriver import Chrome
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions
+# # from time import sleep
+# # driver = Chrome('./chromedriver')
+# # driver.get('file:///C:/Users/admin/Downloads/progressbar.html')
+# # sleep(3)
+# # driver.find_element_by_xpath("//button[text()='Click Me']").click()
+# # wait = WebDriverWait(driver, 30)
+# # wait.until(expected_conditions.visibility_of_element_located(("xpath", "//div[text()='100%']")))
+# # driver.close()
+# from selenium import webdriver
+# from time import sleep
+# driver=webdriver.Chrome("./chromedriver")
+# driver.get(f"file:///C:/Users/admin/Downloads/demo.html")
+# driver.maximize_window()
+# sleep(3)
+# list_=['Java','Python','Ruby','C#','JavaScript']
+# for i in list_:
+#     _xpath = f"//td[text()='{i}']/..//input[@type='checkbox']"
+#     driver.find_element_by_xpath(_xpath).click()
+#     sleep(3)
+
+
+# driver.find_element_by_xpath("//td[text()='Ruby']/..//input[@type='checkbox']").click()
+
+# from selenium.webdriver import Chrome
+# driver = Chrome('./chromedriver')
+# driver.get('http://demowebshop.tricentis.com/')
+# l = ['Excellent', 'Good', 'Poor', 'Very bad']
+# for i in l:
+#     xpath = f"//label[text()='{i}']/..//input[@type='radio']"
+#     driver.find_element_by_xpath(xpath)
+#     sleep(2)
+
+# s = "Hello world. Welcome to Python"
+# l = s.split()
+# c = [(i, len(i)) for i in l ]
+# print(c)
+# r = sorted(c, key=lambda i: i[-1])
+# print(r[-1])
+
+# d = {'a': 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
+# p = {key: value[::-1] if isinstance(value, str) else value for key, value in d.items()}
+# print(p)
+
+# t = ('1', '2', '3', '4')
+# print(''.join(t))
+
+# a = [1, 2, 3]
+# b = [1, 2, 3, 4]
+# for i in b:
+#     if i not in a:
+#         print(i)
+
+# def func(n):
+#     for i in range(1, n):
+#         if i % n == 0:
+#             print('not prime')
+#     else:
+#         print('prime')
+#
+# func(3)
+
+# n = 4
+# for i in range(2, n):
+#     if i % n == 0:
+#         print('not prime')
+# else:
+#     print('prime')
+
+# for n in range(1, 10):
+#     if n>1:
+#         for i in range(2, n):
+#             if n%i==0:
+#                 break
+#         else:
+#             print(n)
+
+# s = ['python', 'selenium', 'peal', 'madam']
+# for i in s:
+#     print(i[::-1])
+
+# s = ['python', 'selenium', 'peal', 'madam']
+# for i in s[::2]:
+#     print(i)
+
+# for i in range(len(s), -1, -2):
+#     print(i)
+
+# for i in range(0, len(s), 2):
+#     print(i)
+
+# s = ['python', 10, 3.2, 'madam', 'java', 2022]
+# for i in s:
+#     if isinstance(i, (int, float)):
+#         print(i)
+
+# l = ['python', 'node js', 'selenium', 'java', 'perl']
+# for i in l:
+#     print(i, len(i))
+#
+#     l = []
+
+# l = ['python', 'node js', 'selenium', 'java', 'perl']
+# for i in l:
+#     if len(i) % 2 == 0:
+#         print(i)
+
+# l = ['python', 'node js', 'selenium', 10, 2.3, 2022, 'java', 'True', 'perl']
+# for i in l:
+#     if isinstance(i, str):
+#         print(i[::-1])
+#     else:
+#         print(i)
+
+# s = ['amazon', 'flipkart', 'walmart', 'gmail', 'yahoo']
+# for i in s:
+#     if i[0] in 'aeiou':
+#         print(i)
+
+# l = ['youtube.txt', 'amazon.pdf', 'apple.xlz', 'flipkart.in']
+# for i in l:
+#     s = i.split('.')
+#     print(s)
+
+# from selenium.webdriver import Chrome
+# from time import sleep
+# driver = Chrome('./chromedriver')
+# driver.get('http://10.10.20.18:3003/')
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+driver = webdriver.Chrome("./chromedriver")
+driver.get("https://google.com")
+driver.find_element_by_id("input").send_keys("python",Keys.ENTER )
+
 

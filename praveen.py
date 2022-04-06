@@ -130,6 +130,7 @@ else :
 #     if n % 2 == 0:
 #        print(n)
 #     n +
+import re
 import sys
 
 '''for n in range(1,11):
@@ -939,7 +940,7 @@ print(count)'''
 #         return j
 #     else:
 #         return test(i-1, i+j)
-# 
+#
 # print(test(4, 7))
 
 # import sys
@@ -2869,7 +2870,7 @@ from itertools import islice
 # res = sorted(d.items(), key=lambda item: item[-1])
 # print(res[-1])
 
-names = ['apple', 'google', 'apple', 'yahoo', 'google']
+# names = ['apple', 'google', 'apple', 'yahoo', 'google']
 # d = {}
 # d = {i for i in names if names.count(i) > 1}
 # print(d)
@@ -2883,7 +2884,7 @@ names = ['apple', 'google', 'apple', 'yahoo', 'google']
 #     if names.count(i) > 1:
 #         print(i)
 
-names = ['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
+# names = ['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 # from collections import defaultdict
 # d = defaultdict(int)
 # for i in names:
@@ -3937,7 +3938,7 @@ names = ['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'ya
 # for i in s[::-1]:
 #     print(i, end=' ')
 
-s = 'hello world'
+# s = 'hello world'
 # count = 0
 # for i in s:
 #     count += 1
@@ -5018,7 +5019,987 @@ path = r'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\s
 #
 # func('python', 10, 2022, 'java', 'mom', 2.5)
 
-s = 'Hi How Are You'
-a = s[::-1]
-print(a)
+# s = 'Hi How Are You'
+# print(s[::-1])
+# l = s.split()
+# for i in l:
+#     print(i[::-1], end=' ')
+
+# res = lambda a, b: a+b
+# print(res(2, 4))
+
+# items = [1, 2, 3, 4, 1, 2, 3, 4, 5]
+# for i in set(items):
+#     print(i)
+
+# ce = "Hello world. Welcome to Python"
+# l = ce.split()
+# d = {}
+# for i in l:
+#     d[i] = len(i)
+# print(d)
+# r = sorted(d.items(), key=lambda item: item[-1])
+# print(r[-1])
+
+# d = {'a': 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
+# d1 = {key: value[::-1] if isinstance(value, str) else value for key, value in d.items()}
+# print(d1)
+
+# l = ['1', '2', '3', '4']
+# print(''.join(l))
+
+# a = [1, 2, 3]
+# b = [1, 2, 3, 4]
+# for i in b:
+#     if i not in a:
+#         print(i)
+
+# def outer(*args):
+#     for i in args:
+#         if len(args) > 5:
+#             return len(args) > 5
+#         return len(args) < 5
+#
+# print(outer(1, 2, 'java', 20, 'home', 2022))
+
+# lines = """CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical"""
+# d = {}
+# l = lines.split()
+# for i in l:
+#     if lines.strip():
+#         d[i] = l.count(i)
+# print(d)
+
+# l = [1, 2, 3, 4, 5, 6]
+# r = [i for i in l[::-1]]
+# print(r)
+
+# def fun(string, n):
+#     if n:
+#         return string[1::2]
+#     return string[::2]
+#
+# print(fun("TRACXN", 0))
+# print(fun("TRACXN", 1))
+
+# s = "Sony12India567Pvt2ltd"
+# import re
+# r = re.findall(r'[0-9]', s)
+# print(r)
+# sum = 0
+# for i in r:
+#     sum += int(i)
+# print(sum)
+
+# s = "Sony12India567Pvt2ltd"
+# import re
+# r = re.findall(r'[0-9]+', s)
+# print(r)
+# sum = 0
+# for i in r:
+#     sum += int(i)
+# print(sum)
+
+# a = ['abc', '123', 'hello', '23']
+# for i in a:
+#     if i.isnumeric():
+#         print(i)
+
+s = 'helloworld'
+# from collections import defaultdict
+# dd = defaultdict(int)
+# for i in s:
+#     dd[i] += s.count(i)
+# print(dd)
+
+# d = {}
+# for i in s:
+#     if i not in d:
+#         d[i] = s.count(i)
+#     else:
+#         d[i] += s.count(i)
+# print(d)
+
+# s = 'helloworld'
+# d = {}
+# for i in s:
+#     if s.count(i) > 1:
+#         d[i] = s.count(i)
+# print(d)
+
+# s = 'hello world welcome to python'
+# r = [i for i in s[::2]]
+# print(r)
+
+# a = [1, 2, 3, 4, 5]
+# r = lambda i: i **2
+# c = [r(i) for i in a]
+# print(c)
+
+# names = ['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
+# c = [i for i in names if len(i) % 2 == 0]
+# print(c)
+
+# names = ['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
+# d = {i for i in names if len(i) % 2 == 0}
+# print(d)
+
+# a = [1, 2, 3, 4, 5]
+# p = lambda i: i * i
+# r = map(p, a)
+# print(list(r))
+
+# path = R'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\sample.txt'
+# with open(path) as file:
+#     count = 0
+#     for line in file:
+#         count += 1
+#     print(count)
+
+# path = R'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\sample.txt'
+# with open(path) as file:
+#     for line_no, line in enumerate(file):
+#         print(line_no, line)
+
+# l = [[1,2,3],[4,5,6],[7,8,9]]
+# e = 0
+# for i in l:
+#     it = 0
+#     for item in i:
+#         it += item
+#         e += item
+#     print(it)
+# print(e)
+
+# words = ["hi", "hello", "python"]
+# c = [i[::-1] for i in words[::-1]]
+# print(c)
+
+# t1 = (1, 2, 3, 4)
+# t2 = (100, 200, 300)
+# print(t1+t2)
+
+# d = {'a': 100, 'b': {'m': 'man', 'n': 'nose', 'o': 'ox', 'c': 'cat'}}
+# for key, value in d.items():
+#     if isinstance(value, dict):
+#         d[key]['n'] = 'net'
+# print(d)
+
+# path = r'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\sample.txt'
+# with open(path) as file:
+#     count = 0
+#     for line in file:
+#         p = line.count(' ')
+#         count += p
+# print(count)
+
+# res = [i for i in range(1, 51) if i % 2 ==0]
+# print(res)
+
+# s = "This is a Programming language and Programming is fun"
+# l = s.split()
+# d = {i: len(i) for i in l if l.count(i) == 1}
+# print(d)
+# res = sorted(d.items(), key=lambda item: item[-1])
+# print(res[-1])
+
+# names = ['apple', 'google', 'apple', 'yahoo', 'google']
+# for i in set(names):
+#     print(i)
+
+# names = ['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
+# from collections import defaultdict
+# d = defaultdict(int)
+# for item in names:
+#     d[item] += 1
+# print(d)
+
+# def fun(n):
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return f'not prime'
+#         return f'prime'
+#
+#
+# print(fun(7))
+
+# print(tuple(range(15)))
+
+# s = [10, 20, 30, 40, 50]
+# print(max(s))
+# p = 50
+# for i in s:
+#     if i == p:
+#         print(i)
+
+# p = 3572
+# o = str(p)
+# print(o)
+# print(o[-1])
+
+# words = [
+# 'look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes',
+# 'the', 'eyes', 'the', 'eyes', 'the', 'eyes', 'not', 'around', 'the', 'eyes', "don't", 'look', 'around', 'the',
+# 'eyes', 'look', 'into','my', 'eyes', "you're", 'under'
+# ]
+# p = {i: words.count(i) for i in words if words.count(i) > 1}
+# print(p)
+
+# def tail(sequence, n):
+#     return sequence[-n:]
+# print(tail('hello', 2))
+
+# def isperfectsquare(n):
+#     for i in range(n):
+#         if i * i == n:
+#             return True
+#         return False
+#
+# print(isperfectsquare(4))
+
+# s = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'facebook', 'apple', 'gmail', 'gmail', 'gmail', 'gmail']
+# d = {i: s.count(i) for i in s if s.count(i) > 1}
+# print(d)
+
+# path = r'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\sample.txt'
+# count = 0
+# with open(path) as file:
+#     for line in file:
+#         for item in line.split():
+#             count += 1
+#         print(count)
+
+# path = r'C:\Users\admin\PycharmProjects\practice\files_directory\txt_log_files\sample.txt'
+# with open(path) as  file:
+#     count = 0
+#     for line in file:
+#         for word in line.split():
+#             if line[0] in 'aeiou':
+#                 count += 1
+#     print(count)
+
+# items = ['apple', 1.2, 'google', '12.6', 26, '100']
+# for i in items:
+#     if isinstance(i, (int, float)):
+#         print(i)
+
+# for row in range(1, 5):
+#     for column in range(1, row+1):
+#         print(column, end=' ')
+#     print()
+
+# for i in range(1, 6):
+#     print(f"{'* '*i:<5}")
+
+# for i in range(5, 0, -1):
+#     print(f"{'* '*i:<5}")
+
+# for i in range(1, 6):
+#     print(f"{'*' *i:>5}")
+
+# for i in range(5, 0, -1):
+#     print(f"{'* '*i:5}")
+
+# for i in range(1, 6):
+#     print(f"{'* ' *i:^10}")
+
+# for i in range(5, 0, -1):
+#     print(f"{'* ' *i:^10}")
+
+# for i in range(5, 0, -1):
+#     print(f"{'*'*i:<5}")
+#
+# for i in range(5, 0, -1):
+#     print(f"{'*'*i:>5}")
+#
+# for i in range(1, 6):
+#     print(f"{'* '*i:^10}")
+
+# for i in range(5, 0, -1):
+#     print(f"{'* '*i:^10}")
+
+# for row in range(1, 5):
+#     for col in range(1, row+1):
+#         print(col, end=' ')
+#     print()
+
+# for row in range(1, 7):
+#     for col in range(1, row-1):
+#         print(col, end=' ')
+#     print()
+
+# names = ["apple", "google", "yahoo", "gmail", "facebook", "flipkart", "amazon"]
+# for i in range(4):
+#     x = names.pop()
+#     names.insert(0, x)
+# print(names)
+
+# sentence = """Hello world welcome to Python Hi  How are you. Hi how are you"""
+# import re
+# r = re.findall(r'\s', sentence)
+# print(r)
+# count = 0
+# for i in r:
+#     count += 1
+# print(count)
+
+# s = 'helloworld'
+# d = {}
+# for i in s:
+#     if s.count(i) == 1:
+#       d[i] = s.count(i)
+# print(d)
+
+# s = 'helloworld'
+# for i in s:
+#     if i not in 'aeiou':
+#         print(i)
+
+
+# import calendar
+# print(calendar.isleap(2012))
+# print(calendar.isleap(2013))
+# print(calendar.isleap(2015))
+# print(calendar.isleap(2016))
+
+# sentence = "Hi How are You WelCome to PytHon"
+# count = 0
+# for i in sentence:
+#     if 'A'<=i<='Z':
+#         count += 1
+# print(count)
+
+# for i in range(1, 5):
+#     print('*'*i)
+#     j = i+1
+#     print('* '*j)
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for i in range(0, 10, 2):
+#     print(a[i:i+2])
+
+# a = [1, 2, 3]
+# b = (4, 5, 6)
+# a.extend(b)
+# print(a)
+# c = {7, 8 , 9}
+# a.extend(c)
+# print(a)
+
+# s = 'helloworld'
+# for i in s:
+#     if s.count(i)>1:
+#         print(i)
+#         break
+
+# e = "hello world welcome to python hello hi how are you hello there"
+# l = e.split()
+# for index, item in enumerate(l):
+#     print(index, item)
+
+# for n in range(1, 51):
+#     if n > 1:
+#         for item in range(2, n):
+#             if n%item==0:
+#                 break
+#         else:
+#             print(n)
+
+# a = [3, 4, 1, 7, 2, 12, 8, 6, 9, 11]
+# p = []
+# o = []
+# for i in a:
+#     if not i%2!=0:
+#         p.append(i)
+#     else:
+#         o.append(i)
+# print(o, p)
+# print(sorted(o))
+# print(sorted(p))
+
+# s = 'hello@world! welcome!!! Python$ hi how are you & where are you?'
+# import re
+# r = re.findall(r'[a-zA-Z]', s)
+# print(r)
+# count= 0
+# for i in r:
+#     count += 1
+# print(count)
+
+# s = ['lotus-flower', 'lilly-flower', 'cat-animal', 'sunflower-flower', 'dog-animal']
+# d = {}
+# for i in s:
+#     l = i.split('-')
+#     if l[1] not in d:
+#         d[l[1]] = l[0]
+#     else:
+#         d[l[1]] += l[0]
+# print(d)
+
+# files = ['apple.txt', 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt', 'flipkart.pdf']
+# d = {}
+# for i in files:
+#     l = i.split('.')
+#     if l[1] not in d:
+#         d[l[1]] = l[0]
+#     else:
+#         d[l[1]] += l[0]
+# print(d)
+
+# s = '@hello12world34welcome!123'
+# for i in s:
+#     if not '0'<=i<='9':
+#         print(i, end='')
+
+# sentence = "Hi there! How are you:) How are you doing today!"
+# import re
+# r = re.findall(r'[a-zA-Z]+', sentence)
+# print(r)
+# count = 0
+# for i in r:
+#     count += 1
+# print(count)
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# c = {0:[i for i in numbers if i%2==0]}
+# p = {1:[i for i in numbers if i%2!=0]}
+# print(c)
+# print(p)
+
+# numbers = [1, 2, 3, 0, 4, 3, 2, 4, 2, 1, 0, 4]
+# p = 4
+# for i in numbers:
+#     if i ==p:
+#         print(i)
+
+# s = "hello world hi apple you yahoo to you"
+# l = s.split()
+# for i in l:
+#     r = sorted(l, key=len)
+# print(r)
+# print(r[4:])
+
+# l = [1, 3, 5,4, 7, 11]
+# for i in range(1, 15):
+#     print(i)
+
+# class Parent:
+#     @staticmethod
+#     def demo():
+#         print('Running demo in Parent')
+#
+#
+# class Child(Parent):
+#     @staticmethod
+#     def demo():
+#         print('Running demo in Child')
+#
+# c = Child()
+# c.demo()
+
+# def func(*args):
+#     sum = 0
+#     for i in args:
+#         sum += 1
+#     return sum
+#
+# print(func(([1, 2, 3], (4, 5))))
+
+# s = "hello world welcome to python"
+# for i in s:
+#     if i in 'aeiou':
+
+
+# numbers = [10, 15, 20, 25, 30, 35, 40, 15, 15]
+# r = sorted(numbers)
+# print(r)
+# print(r[:3])
+# print(r[-3:])
+
+# l = "python@#$%pool"
+# import re
+# r = re.findall(r'[a-zA-z]+', l)
+# print(r)
+
+# numbers = ['1', '12', '123', '12345', '125', '905', '55', '5', '95655', '55555']
+# for i in numbers:
+#     if i.endswith('5'):
+#         print(i)
+
+# names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
+# from collections import defaultdict
+# dd = defaultdict(list)
+# for index, item in enumerate(names):
+#     dd[item] += [index]
+# print(dd)
+
+# print('banglore \n ' * 10)
+
+# s = 'hello world hi hello universe how are you happy birthday'
+# l = s.split()
+# for i in l:
+#     if i.startswith('h'):
+#         print(i)
+
+# s = 'hello 123 world 567 welcome to 9724 python'
+# import re
+# r = re.findall(r'[0-9]', s)
+# print(r)
+# l =[]
+# for i in r:
+#     if int(i)%2==0:
+#         l.append(i)
+# print(l)
+# sum = 0
+# for i in l:
+#     sum += int(i)
+# print(sum)
+
+# s = 'hello 123 world 456 welcome to python498675634'
+# import re
+# r = re.findall(r'[0-9]', s)
+# print(r)
+# c = [i for i in r if int(i) % 2 == 0]
+# p = [i for i in r if int(i) % 2 != 0]
+# print(c)
+# print(p)
+
+# s = ['857', '987', '8', '120', '888888', '547', '7674', '89', '589', '388888', '2889']
+# for i in s:
+#     if i.startswith('8'):
+#         print(i)
+
+# numbers = [1, 3, 6, 8, 10]
+# for i in range(1, 10):
+#     if not i in numbers:
+#         print(i)
+
+# d = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+# for key, value in d.items():
+#     r = [key for key in d]
+#     print(r)
+
+# print(f'decorator is a function which is used to add additional feature to the main task')
+
+# from time import sleep
+# def outer(func):
+#     def wrapper(*args, **kwargs):
+#         sleep(2)
+#         print('executed parent deco')
+#         func(*args, **kwargs)
+#     return wrapper
+#
+# @outer
+# def add():
+#     print('hi hello')
+#
+# add()
+
+# def outer(func):
+#     def wrapper(*args, **kwargs):
+#         r = func(*args, **kwargs)
+#         return r[::-1]
+#     return wrapper
+#
+# @outer
+# def fun(string):
+#     return string
+#
+# print(fun('python'))
+
+# def outer(func):
+#     def wrapper(*args, **kwargs):
+#         r = func(*args, **kwargs)
+#         return r
+#     return wrapper
+# @outer
+# def fun(a, b):
+#     return a+b
+#
+# print(fun(3, 5))
+
+# def outer(func):
+#     def wrapper(*args, **kwargs):
+#         r = func(*args, **kwargs)
+#         return abs(r)
+#     return wrapper
+# @outer
+# def sub(a, b):
+#     return a-b
+#
+# print(sub(5, -9))
+
+# d = {1:'True', 2: 'False', 3: 'True', 4: 'False'}
+# for key, value in d.items():
+#     if value == 'True':
+#         d[key] = 'Pass'
+#     else:
+#         d[key] = 'False'
+# print(d)
+
+# import re
+# s = 'hi my name is john and email is john.doe@company.co'
+# a = s.split()
+# print(a[-1])
+# r = re.findall(r'[a-zA-Z.+]+@[a-zA-Z]+.[a-zA-z]+', s)
+# print(r)
+
+# l = [1, 2, 3, 4, 5]
+# r = [i for i in l if i%2==0]
+# print(r)
+
+# t = (1, 2, 3,4)
+# print(t[2])
+# email=re.findall(r'[a-zA-Z0-9+.-]+@[a-zA-Z0-9+-]+.[a-zA-Z0-9]+', s)
+# print(email)
+
+# l = [1,2,3,4,5]
+# print(l[10:])
+
+# s ='hello'
+# print(list(s))
+# print(''.join(['h', 'e', 'l', 'l', 'o']))
+
+# # help('keywords')
+#
+# n = 12345
+# if n%2==0:
+#     print('even')
+# else:
+#     print('not even')
+
+# d = {1: 'all', 2:'hi', 3:'True', 4:'False'}
+# for key, value in d.items():
+#     if value == 'True':
+#         d[key] = 'Pass'
+#     else:
+#         d[key] = value
+# print(d)
+
+
+# s = 'hi praveen'
+# count = 0
+# for i in s:
+#     count += 1
+# print(count)
+
+# s = 'hi praveen'
+# for i in s[::-1]:
+#     print(i)
+
+# s = 'hi praveen'
+# print(s.replace('praveen', 'prakash'))
+
+# print(s.replace('praveen', 'prakash'))
+
+# s = "Hello welcome to Python"
+# l = s.split()
+# print(l, end=',')
+
+# for i in s[::2]:
+# s = 'hello'
+# for i in s:
+#     print(ord(i))
+
+# s = 'HEllo wORld'
+# r = ''
+# for i in s:
+#     if 'a'<=i<='z':
+#         r+=chr(ord(i)-32)
+#         r+=chr(ord(i)+32)
+#     else:
+#         r+=i
+# print(r)
+
+# /a = 100
+# b =// 200
+# a,b == /b,a
+# print(b)//
+# print(a)
+#
+
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# print(a+b)
+
+# s='malayalam'
+# c = ['True' if s == s[::-1] else 'False']
+# print(c)
+
+# s='hello world'
+# for index, item in enumerate(s):
+#     if s.count(item)>1:
+#         print(item, index)
+
+# sentence = "hello world welcome to python programming hi there"
+# l = sentence.split()
+# d = {}
+# for i in l:
+#     if i[0] not in d:
+#         d[i[0]] = [i]
+#     else:
+#         d[i[0]]+=[i]
+# print(d)
+
+# g = 'hellohai'
+# c = ''.join(['-' if g.count(i)>1 else i for i in g])
+# print(c)\
+
+# def outer(func):
+#     def wrapper(*args, **kwargs):
+#         r = func(*args, **kwargs)
+#         return abs(r)
+#     return wrapper
+#
+# @outer
+# def sub(a, b):
+#     return a-b
+#
+# print(sub(-1, 10))
+
+# def func(*args):
+#     for i in args:
+#         if isinstance(i, (int, float)):
+#             print(str(i)[::-1])
+#         else:
+#             print(i)
+#
+# func(['apple', 'yahoo', '1234', 100, 123.76, '26.23'])
+
+# class simple:
+#     def __init__(self, num):
+#         self.num=num
+#
+#     def display(self):
+#         print('display')
+#
+# s=simple(1)
+# s.display()
+
+# s = "Hi How are you"
+# l = s.split()
+# for i in l:
+#     print(i[::-1], end=' ')
+# print()
+# print(s[::-1])
+
+# res = lambda a, b: a+b
+# print(res(1, 8))
+
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# print((a, b))
+# print([a, b])
+
+# items = [1, 2, 3, 4, 1, 2, 3, 4, 5]
+# for i in set(items):
+# c = [i for i in items if items.count(i)==1]
+#     print(i)
+
+# s = "Hello world. Welcome to Python"
+# l = s.split()
+# print(l)
+# res = sorted(l, key=len)
+# print(res)
+# print(res[-1])
+
+# d = {'a': 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
+# d1={key: value[::-1] if isinstance(value, str) else value for key, value in d.items()}
+# print(d1)
+
+# t = ('1', '2', '3', '4')
+# print(''.join(t))
+
+# a = [1, 2, 3]
+# b = [1, 2, 3, 4]
+# for i in b:
+#     if i not in a:
+#         print(i)
+
+# def func(*args):
+#     if len(args)>5:
+#         return 'length is > 5'
+#     return 'lennth is < 5'
+#
+# print(func(1,2,3,4,5,6))
+
+
+# lines = """CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical
+# CRITICAL:Hello world
+# INFO: This is an info
+# ERROR: This is an error
+# CRITICAL: This is critical"""
+# count = 0
+# for i in lines:
+#     if lines.count(i)>1:
+#         count += 1
+# print(count)
+
+# a = [1, 2, 3, 4, 5]
 # print(a[::-1])
+
+# def func(string, n):
+#     if n:
+#         return string[::2]
+#     return string[1::2]
+#
+# print(func("TRACXN", 0))
+# print(func("TRACXN", 1))
+
+# s = "Sony12India567Pvt2ltd"
+# sum = 0
+# for i in s:
+#     if '0'<=i<='9':
+#         sum+=int(i)
+# print(sum)
+
+# s = "Sony12India567Pvt2ltd" # eg.12+567+2
+#
+# import re
+# res = re.findall(r'[0-9]+', s)
+# print(res)
+# sum=0
+# for i in res:
+#     sum+=int(i)
+# print(sum)
+
+
+# a = ['abc', '123', 'hello', '23']
+# for i in a:
+#     if i.isdigit():
+#         print(i)
+
+# s = 'helloworld'
+# from collections import defaultdict
+# dd = defaultdict(int)
+# for i in s:
+#     dd[i] += s.count(i)
+# print(dd)
+
+# s = 'helloworld'
+# d= {i: s.count(i)
+#     for i in s if s.count(i)>1}
+# print(d)
+
+# s = 'hello world welcome to python'
+# c= [i for i in s[::2]]
+# print(c)
+
+# class praveen:
+#     __a = "hello"
+#
+#     def __init__(self,name, age):
+#         self.__name = name
+#         self.__age = age
+#     def display(self):
+#         print("my name is",self.__name)
+#         print("my age is",self.__age)
+#
+#
+# hero = praveen("dabba", 25)
+# print(hero._praveen__name)
+# print(hero._praveen__a)
+# hero._praveen__a = "world"
+# print(hero._praveen__a)
+# hero.display()
+
+#
+# class bank:
+#     def rateofinterest(self):
+#         return 0
+#
+# class ICICI(bank):
+#     def rateofinterest(self):
+#         return 10.5
+#
+# obj=ICICI()
+# print(obj.rateofinterest())
+#
+#
+# obj1 = bank()
+# print(obj1.rateofinterest())
+
+# def add1(a,b):
+#     return a+b
+# def add2(c,d):
+#     return c+d
+#
+# print(add1(2,3))
+# print(add2(4, 5))
+
+# class demo:
+#     def __init__(self,sal):
+
+# class myclass:
+#     __a = 10
+#     def dis(self):
+#         print(self.__a)
+#
+# obj=myclass()
+# obj.dis()
+# print(myclass.__a)
+
+
+#over loaded constructor
+# class std:
+#     def __init__(self, a=0, b=0, c=0):
+#         self.a=a
+#         self.b=b
+#         self.c=c
+#
+# p1=std()
+# print(p1.__dict__)
+# p1=std(a=1)
+# print(p1.__dict__)
+# p1=std(a=1, b=3)
+# print(p1.__dict__)
+
+
+# a = [2,1,6,6,7,7,9,2,1,3]
+# print(a.sort())
+# print(b)
+
+
+# l1=[1,2,3,4,5]
+# l2=[6,3,2,1,4,5]
+# l = l1+l2
+# print((l))
+# print(sorted(l))
+
+def func(start, end):
+    for n in range(start, end+1):
+        if n>1:
+            for item in range(2,n):
+                if n%item==0:
+                    break
+            else:
+                print(n)
+
+func(1,16)
+
